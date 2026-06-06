@@ -1,4 +1,0 @@
-interface:
-  display_name: "Attack"
-  short_description: "Run a multi-angle adversarial critique"
-  default_prompt: "Use $attack to run a three-angle adversarial critique on this change before shipping."
