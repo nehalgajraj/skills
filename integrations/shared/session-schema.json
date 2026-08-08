@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Tracked Work Session",
+  "type": "object",
+  "required": [
+    "name",
+    "slug",
+    "started_at",
+    "base_branch",
+    "base_sha",
+    "worktree_path",
+    "branch"
+  ],
+  "properties": {
+    "name": {"type": "string"},
+    "slug": {"type": "string"},
+    "started_at": {"type": "string", "format": "date-time"},
+    "base_branch": {"type": "string"},
+    "base_sha": {"type": "string"},
+    "worktree_path": {"type": "string"},
+    "branch": {"type": "string"},
+    "reference_file": {"type": ["string", "null"]}
+  },
+  "additionalProperties": true
+}
